@@ -13,3 +13,11 @@ let division = function(x, y){
 let multi = function(x, y){
     return x*y;
 }
+
+let num = function(x){
+    
+}
+
+function printResult(){
+
+}
