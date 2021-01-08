@@ -4,7 +4,7 @@
     <title>Calculator</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 <body>
@@ -21,17 +21,17 @@
             <div class="box">
                 <div class="media-content">
                     <div class="media-left">
-                        <button class="button are-medium">CA</button>
+                        <button class="button are-medium is-rounded is-warning">CA</button>
                     </div>
                     <div class="content">
                         <p class="is-size-2 has-text-right" id="text">0</p>
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="box">
-                    <div class="media-content">
-                        <div class="container">
+            <div class="columns">
+                <div class="column is-5 is-offset-1">
+                    <div class="box">
+                        <div class="media-content">
                             <div class="columns">
                                 <div class="column">
                                     <div class="buttons are-medium is-centered">
@@ -55,8 +55,27 @@
                                         <button class="button is-large is-size-4">+-</button>
                                     </div>
                                 </div>
-                                <div class="column"></div>
-                                <div class="column"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-5">
+                    <div class="box">
+                        <div class="media-content">
+                            <div class="buttons are-medium is-centered">
+                                <button class="button is-size-4">/</button>
+                                <button class="button is-size-4">X</button>
+                                <button class="button is-size-4">-</button>
+                                <button class="button is-size-4">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="media-content">
+                            <div class="buttons are-medium is-centered">
+                                <button class="button is-size-4 is-success">=</button>
+                                <button class="button is-size-4">C</button>
+                                <button class="button is-size-4">Delete</button>
                             </div>
                         </div>
                     </div>
