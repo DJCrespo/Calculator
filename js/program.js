@@ -21,3 +21,11 @@ let num = function(x){
 function printResult(){
 
 }
+
+function add(valor){
+    document.getElementById("textBox1").innerHTML += valor;
+}
+
+function cA(){
+    document.getElementById("textBox1").innerHTML = "";
+}
