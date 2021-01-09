@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 <body>
-    <section class="hero is-dark">
-        <div class="hero-body">
-            <div class="level">
-                <h1 class="title">Calculator</h1>
-                <h2 class="subtitle">by DJCrespo</h2>
-            </div>
-        </div>
-    </section>
     <div class="columns has-background-grey-lighter">
         <div class="column is-8 is-offset-2">
             <br>
@@ -52,8 +44,8 @@
                                         <button class="button is-size-4" onclick="add(3);">3</button>
                                     </div>
                                     <div class="buttons are-medium is-centered">
-                                        <button class="button is-size-4" onclick="add();">0</button>
-                                        <button class="button is-size-4" onclick="add();">.</button>
+                                        <button class="button is-size-4" onclick="add(0);">0</button>
+                                        <button class="button is-size-4" onclick="add('.');">.</button>
                                         <button class="button is-size-4" onclick="result()">=</button>
                                     </div>
                                 </div>
@@ -65,18 +57,18 @@
                     <div class="box">
                         <div class="media-content">
                             <div class="buttons are-medium is-centered">
-                                <button class="button is-size-4">/</button>
-                                <button class="button is-size-4">X</button>
-                                <button class="button is-size-4">-</button>
-                                <button class="button is-size-4">+</button>
+                                <button class="button is-size-4" onclick="operation('/');">/</button>
+                                <button class="button is-size-4" onclick="operation('X');">X</button>
+                                <button class="button is-size-4" onclick="operation('-');">-</button>
+                                <button class="button is-size-4" onclick="operation('+');">+</button>
                             </div>
                         </div>
                     </div>
                     <div class="box">
                         <div class="media-content">
                             <div class="buttons are-medium is-centered">
-                                <button class="button is-size-4">C</button>
-                                <button class="button is-size-4">Delete</button>
+                                <button class="button is-size-4" onclick="c();">C</button>
+                                <button class="button is-size-4" onclick="deleteOne();">Delete</button>
                             </div>
                         </div>
                     </div>
