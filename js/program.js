@@ -28,4 +28,5 @@ function add(valor){
 
 function cA(){
     document.getElementById("textBox1").innerHTML = "";
+    document.getElementById("textBox2").innerHTML = "";
 }
